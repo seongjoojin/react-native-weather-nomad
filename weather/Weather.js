@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     title: {
         fontSize:38,
         color:'white',
-        marginBottom:10,
+        paddingBottom:10,
         fontWeight:'300'
     },
     subtitle: {

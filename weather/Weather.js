@@ -16,7 +16,7 @@ export default class Weather extends Component{
                         size={144}
                         name="ios-rainy"
                     />
-                    <Text style={styles.temp}>35º</Text>
+                    <Text style={styles.temp}>35℃</Text>
                 </View>
                 <View style={styles.lower}>
                     <Text style={styles.title}>Raining</Text>

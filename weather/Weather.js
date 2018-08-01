@@ -45,7 +45,7 @@ const weatherCases = {
         colors:["#403B4A","#E7E9BB"],
         title:"Fog",
         subtitle:"I gloomy...",
-        icons:'ios-rainy-outline'
+        icons:'ios-cloud-outline'
     }
 }
 

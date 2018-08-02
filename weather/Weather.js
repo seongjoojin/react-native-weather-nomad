@@ -73,7 +73,6 @@ export default class Weather extends Component {
     }
     render(){
         let { weatherIcons, weatherColors, weatherTitle, WeatherSubtitle } = this.state
-        console.log(weatherColors)
         return(
             <LinearGradient 
                 colors={weatherColors}

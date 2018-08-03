@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 import { LinearGradient } from "expo";
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import PropTypes from 'prop-types';
+import Moment from 'moment';
 
 const weatherCases = {
     Rain: {
@@ -50,8 +51,9 @@ export default class Weather extends Component {
         WeatherSubtitle:null
     }
     componentWillMount(){
+        // console.log(Moment().unix())
         let timeStateArray = 
-        this.props.weatherIcons.indexOf("n") ? 
+        (this.props.sunrisetime > Moment().unix() && this.props.sunsettime < Moment().unix()) ? 
         [
             "weather-night",
             ["#3498DB","#2C3E50"],
@@ -105,7 +107,6 @@ Weather.propTypes = {
     temp:PropTypes.number.isRequired,
     weatherName:PropTypes.string.isRequired,
     weatherDesc:PropTypes.string.isRequired,
-    weatherIcons:PropTypes.string.isRequired
 }
 
 const styles = StyleSheet.create({
